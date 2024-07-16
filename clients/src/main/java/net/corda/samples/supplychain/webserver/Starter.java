@@ -4,6 +4,8 @@ import org.springframework.boot.Banner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 import static org.springframework.boot.WebApplicationType.SERVLET;
 
@@ -12,6 +14,8 @@ import static org.springframework.boot.WebApplicationType.SERVLET;
  */
 @SpringBootApplication
 @ComponentScan(basePackages = "net.corda.samples.supplychain.webserver")
+@EnableSwagger2
+@EnableWebMvc
 public class Starter {
     /**
      * Starts our Spring Boot application.
