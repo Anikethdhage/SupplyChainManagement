@@ -27,6 +27,9 @@ dependencies {
     compile 'com.fasterxml.jackson.core:jackson-annotations:2.4.1'
     compile 'com.fasterxml.jackson.core:jackson-databind:2.4.1'
 
+    implementation 'io.springfox:springfox-swagger2:3.0.0'
+    implementation 'io.springfox:springfox-swagger-ui:3.0.0'
+    implementation 'io.springfox:springfox-boot-starter:3.0.0'
 }
 
 springBoot {
